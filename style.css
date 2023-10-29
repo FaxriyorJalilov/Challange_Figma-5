@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend+Deca:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Inter", sans-serif;
+  font-family: "Lexend Deca", sans-serif;
+}
+body {
+  background: #0a0c1c;
+}
+.container {
+  /* display: grid;
+  place-items: center;
+  min-height: 100vh; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box_right {
+  background: #1b1937;
+  padding: 77px 70px 50px 72px;
+  border-radius: 10px 0px 0px 10px;
+}
+.box_right h1 {
+  max-width: 430px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 44px;
+  margin-bottom: 25px;
+}
+.box_right span {
+  color: #ab5cdb;
+}
+.box_right p {
+  max-width: 374px;
+  font-family: "Inter", sans-serif;
+  color: #9e9b9b;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  margin-bottom: 72px;
+}
+.box_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.box_result h2 {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.box_result h3 {
+  color: #7b7979;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.box_left img + img {
+  display: none;
+}
+@media (max-width: 430px) {
+  .container {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 50px 0px;
+  }
+  .box {
+    flex-wrap: wrap-reverse;
+  }
+  .box_right {
+    padding: 32px 31px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .box_right h1 {
+    max-width: 264px;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .box_right p {
+    max-width: 264px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .box_grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+  }
+  .box_left > img {
+    display: none;
+  }
+  .box_left img + img {
+    display: block;
+  }
+}
